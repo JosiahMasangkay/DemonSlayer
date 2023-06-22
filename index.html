@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="img/Picture2.png" alt="" class="logo"></a>
+            <div class="burger" onclick="burger();"></div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="character.html">Character</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                
+            </ul>
+        </header>
+
+        <main class="content">
+            <div class="textBox">
+                <h2>KIMETSU NO  <br> <span>YAIBA</span></h2>
+                <p> Demon Slayer follows the journey of Tanjiro Kamado, 
+                    a young boy whose family is brutally slaughtered by demons. 
+                    Determined to avenge their deaths and find a cure for his demon-turned 
+                    sister, Nezuko, Tanjiro becomes a member of the Demon Slayer Corps, 
+                    battling powerful demons and unraveling the mysteries of his own 
+                    bloodline in a quest to save humanity.</p>
+                <a href="about.html">Learn More...</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/Picture3.png" alt="" class="Main">
+            </div>
+        </main>    
+
+        <ul class="char">
+            <li><img src="img/Picture3.png" alt="" onclick="imgSlider('img/Picture3.png');bgcolor('#df5959')"></li>
+            <li><img src="img/nez.png" alt="" onclick="imgSlider('img/nez.png');bgcolor('#f542a2')"></li>
+            <li><img src="img/inosuke1.png" alt="" onclick="imgSlider('img/inosuke1.png');bgcolor('#2392a3')"></li>
+            <li><img src="img/zenitsu.png" alt="" onclick="imgSlider('img/zenitsu.png');bgcolor('#ccd309')"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/DemonSlayer.anime"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="https://twitter.com/DemonSlayerUSA"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/demon_slayer_officials/"><img src="img/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <footer style="background-color: #f0f0f0;padding: 20px;text-align: center; display: flex; justify-content: space-around; align-items: center;">
+        <img src="img/kodego.png" alt="" style="max-height: 50px;">
+        <img src="img/nezuko.gif" alt="GIF Image" style="max-width: 50px; transform: scaleX(-1);">
+        
+        <p >&copy; 2023 Demon Slayer (E-magazine). All rights reserved.</p>
+        <img src="img/nezuko.gif" alt="GIF Image" style="max-width: 50px;">
+        <img src="img/kodego.png" alt="" style="max-height: 50px;">
+        
+    </footer>
+    
+   <script>
+    function imgSlider(anything){
+        document.querySelector('.Main').src = anything;
+    }
+    function bgcolor(color){
+        const sec =document.querySelector('.sec');
+        sec.style.background = color;
+    }
+    function burger(){
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav');
+        burger.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+   </script>
+
+</body>
+</html>

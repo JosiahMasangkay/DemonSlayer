@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+   <link rel="stylesheet" href="CSS/style1.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="img/Picture2.png" alt="" class="logo"></a>
+        <h1>FAQs</h1>
+
+            <div class="burger" onclick="burger();"></div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="character.html">Character</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                
+            </ul>
+        </header>
+    </section>
+    
+    
+    <div class="wrapper">
+
+        <div class="faq">
+            <button class="accordion">
+                What is Demon Slayer?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Demon Slayer, also known as Kimetsu no Yaiba, is an anime series based on the manga by Koyoharu Gotouge. It follows the story of Tanjiro Kamado, a young boy who becomes a member of the Demon Slayer Corps, fighting against demons and seeking a cure for his sister's transformation into a demon.</p>
+            
+            </div>
+            
+        </div>
+
+        <div class="faq active">
+            <button class="accordion">
+                Animation Cost Of Demon Slayer?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>The cost for making a single episode of Demon Slayer, known for its unique animation style is $80,000</p>
+            </div>
+        </div>
+
+        <div class="faq ">
+            <button class="accordion">
+                Where can I watch Demon Slayer?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>You can watch Demon Slayer on various streaming platforms, including Crunchyroll, Funimation, and Hulu. It is also available for purchase on Blu-ray and DVD.</p>
+            </div>
+        </div>
+
+        <div class="faq ">
+            <button class="accordion">
+                Are there Demon Slayer movies?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Yes, there are Demon Slayer movies. The first movie, "Demon Slayer: Kimetsu no Yaiba the Movie: Mugen Train," serves as a direct continuation of the first season and adapts the "Infinity Train" arc from the manga. It has been highly acclaimed and is a crucial part of the series.</p>
+            </div>
+        </div>
+
+        <div class="faq ">
+            <button class="accordion">
+                Who are the main characters in Demon Slayer?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>The main characters in Demon Slayer include Tanjiro Kamado, the protagonist, who wields a sword and practices the Water Breathing technique; Nezuko Kamado, Tanjiro's sister who has been turned into a demon; Zenitsu Agatsuma, a swordsman with a unique hearing ability; and Inosuke Hashibira, a wild and boar-headed warrior. There are also various other members of the Demon Slayer Corps who play significant roles throughout the series.</p>
+            </div>
+        </div>
+
+        <div class="faq ">
+            <button class="accordion">
+                Is Demon Slayer suitable for all ages?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Demon Slayer is rated TV-14 in the United States, indicating that it is suitable for viewers aged 14 and above. It contains intense action, violence, and themes that may not be appropriate for younger audiences.</p>
+            </div>
+        </div>
+
+        <div class="faq ">
+            <button class="accordion">
+                Is the Demon Slayer anime complete?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>The Demon Slayer anime adaptation covers a significant portion of the manga storyline but is not complete. The story continues beyond the anime, and fans can explore the remaining arcs by reading the manga series.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer style="background-color: #f0f0f0;padding: 20px;text-align: center; display: flex; justify-content: space-around; align-items: center;">
+        <img src="img/kodego.png" alt="" style="max-height: 50px;">
+        <img src="img/nezuko.gif" alt="GIF Image" style="max-width: 50px; transform: scaleX(-1);">
+        
+        <p >&copy; 2023 Demon Slayer (E-magazine). All rights reserved.</p>
+        <img src="img/nezuko.gif" alt="GIF Image" style="max-width: 50px;">
+        <img src="img/kodego.png" alt="" style="max-height: 50px;">
+        
+    </footer>
+
+    <script>
+        
+                function burger(){
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav');
+            burger.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+        var acc = document.getElementsByClassName("accordion");
+          var i;
+            for(i = 0; i < acc.length; i++){
+                acc[i].addEventListener("click", function (){
+                    this.classList.toggle("active");
+                    this.parentElement.classList.toggle("active");
+
+                    var pannel = this.nextElementSibling;
+                    if(pannel.style.display === "block"){
+                        pannel.style.display = "none";
+                    }else{
+                        pannel.style.display = "block";
+
+                    }
+                });
+            }
+       </script>    
+</body>
+</html>

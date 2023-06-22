@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<style>
+    section{
+        background: #8a2323;
+
+    }
+</style>
+<body>
+
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="img/Picture2.png" alt="" class="logo"></a>
+            <div class="burger" onclick="burger();"></div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="character.html">Character</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                
+            </ul>
+        </header>
+
+        <main class="content">
+            
+            <div class="textBox">
+                <h3>About Demon Slayer:</h3>
+                <p> Demon Slayer follows the journey of Tanjiro Kamado, 
+                    a young boy whose family is brutally slaughtered by demons. 
+                    Determined to avenge their deaths and find a cure for his demon-turned 
+                    sister, Nezuko, Tanjiro becomes a member of the Demon Slayer Corps, 
+                    battling powerful demons and unraveling the mysteries of his own 
+                    bloodline in a quest to save humanity.
+                </p><br>
+                <h5>Synopsis:</h5>
+                <p> After his family is tragically slaughtered by demons, Tanjiro Kamado, a kind-hearted and skilled young man, embarks on a journey of revenge and redemption. He joins the elite Demon Slayer Corps, a group of warriors trained to battle the demonic creatures threatening humanity. Alongside his sister, Nezuko, who has been transformed into a demon herself, Tanjiro must face unimaginable challenges, unravel the mysteries of his own bloodline, and ultimately find a cure for Nezuko's condition. With his unique water-breathing technique and unwavering determination, Tanjiro fights to restore peace and vanquish the forces of darkness.
+                </p> <br>
+                
+            </div>
+            <div class="imgBox">
+                
+                <video src="img/Vid1.mp4" autoplay  loop>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+        </main>    
+
+        
+    </section>
+
+    <footer style="background-color: #f0f0f0;padding: 20px;text-align: center; display: flex; justify-content: space-around; align-items: center;">
+        <img src="img/kodego.png" alt="" style="max-height: 50px;">
+        <img src="img/nezuko.gif" alt="GIF Image" style="max-width: 50px; transform: scaleX(-1);">
+        
+        <p >&copy; 2023 Demon Slayer (E-magazine). All rights reserved.</p>
+        <img src="img/nezuko.gif" alt="GIF Image" style="max-width: 50px;">
+        <img src="img/kodego.png" alt="" style="max-height: 50px;">
+        
+    </footer>
+   <script>
+    
+    function burger(){
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav');
+        burger.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+   </script>
+
+</body>
+</html>

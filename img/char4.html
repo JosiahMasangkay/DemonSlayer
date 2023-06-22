@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character</title>
+    <link rel="stylesheet" href="../CSS/style2.css">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="../index.html"><img src="Picture2.png" alt="" class="logo"></a>
+            <div class="burger" onclick="burger();"></div>
+            <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../character.html">Character</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../faqs.html">FAQs</a></li>   
+            </ul>
+        </header>
+
+        <a href="char3.html" class="arrow-l"><img src="arrow-right.svg" alt=""></a>
+       
+
+        <div class="container">
+            <div class="highlights" style="    color: #fff;
+
+            font-size: 2em;
+            line-height: 1.5em;
+            font-weight: 600;
+            text-transform: uppercase;">
+                <label for="vid" style="margin-bottom: -50px; padding: auto; display: flex; justify-content: center; margin: 5px 5px 5px 5px;">Character Highlights</label>
+                <video src="char/Inosuke.mp4" autoplay loop name="vid" ></video>
+            </div>
+            <div class="title">
+                <h1>Inosuke Hashibira</h1>
+            </div>
+            <div class="text">
+                <p>Inosuke is a wild and aggressive warrior with a boar's head. He prefers close combat and wields dual swords. Inosuke possesses remarkable physical strength, agility, and an instinctive fighting style. Despite his rough exterior, he develops a close bond with Tanjiro and the others.</p>
+            </div>
+    
+    
+            <main >
+                <img src="char//inosuke (3).jpg" alt="">
+                <img src="char//inosuke (2).jpg" alt="">
+                <img src="char//inosuke (1).jpg" alt="">
+            </main>
+
+        </div>
+        <a href="char5.html" class="arrow"><img src="arrow-right.svg" alt=""></a>
+
+       
+    </section>
+
+    
+    
+
+    <footer style="background-color: #f0f0f0;padding: 20px;text-align: center; display: flex; justify-content: space-around; align-items: center;">
+        <img src="kodego.png" alt="" style="max-height: 50px;">
+        <img src="nezuko.gif" alt="GIF Image" style="max-width: 50px; transform: scaleX(-1);">
+        
+        <p >&copy; 2023 Demon Slayer (E-magazine). All rights reserved.</p>
+        <img src="nezuko.gif" alt="GIF Image" style="max-width: 50px;">
+        <img src="kodego.png" alt="" style="max-height: 50px;">
+        
+    </footer>
+
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.Main').src = anything;
+        }
+        function bgcolor(color){
+            const sec =document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        function burger(){
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav');
+            burger.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+       </script>
+</body>
+</html>
